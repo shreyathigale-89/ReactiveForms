@@ -5,7 +5,7 @@
         <form [formGroup]="quizForm" (ngSubmit)="onSubmit()">
 
           <div class="form-group text-center username">
-            <label for="name">What's your name?</label>
+            <label for="name">What's your name ?</label>
             <input class="form-control" type="text" id="name" name="name" formControlName="name">
             <span class="errormsg"
               *ngIf="quizForm.get('name').touched && quizForm.get('name').hasError('required')">Please Enter Your
@@ -31,16 +31,16 @@
 
                 Select Correct Option : <br>
 
-                <input type="radio" value="{{this.quiz.value[i].option1}}" name="radio"
-                   formControlName='radio'>{{this.quiz.value[i].option1}} <br>
+                <input type="radio" value="{{this.quiz.value[i].option1}}" name="ans"
+                   formControlName='ans'>{{this.quiz.value[i].option1}} <br>
 
-                <input type="radio" value="{{this.quiz.value[i].option2}}" name="radio"
-                   formControlName='radio'>{{this.quiz.value[i].option2}} <br>
+                <input type="radio" value="{{this.quiz.value[i].option2}}" name="ans"
+                   formControlName='ans'>{{this.quiz.value[i].option2}} <br>
 
-                <input type="radio" value="{{this.quiz.value[i].option3}}" name="radio"
-                   formControlName='radio'>{{this.quiz.value[i].option3}} <br>
+                <input type="radio" value="{{this.quiz.value[i].option3}}" name="ans"
+                   formControlName='ans'>{{this.quiz.value[i].option3}} <br>
 
-                <p>Correct Answer is : <span style="font-weight: 700;">{{this.quiz.value[i].radio}}</span></p>
+                <p>Correct Answer is : <span style="font-weight: 700;">{{this.quiz.value[i].ans}}</span></p>
                 <button class="btn btn-danger btn-sm mt-4 btn-delete" (click)="removeSkill(i)">Delete</button><br><br>
               </div>
             </ng-container>
