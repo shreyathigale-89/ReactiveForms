@@ -1,0 +1,44 @@
+
+
+input.ng-touched.ng-invalid
+{
+    border:1px solid red;
+}
+
+
+.btn-delete{
+   padding: 7px;
+}
+
+.btn-add
+{
+    padding: 5px 15px 7px 15px;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+#output
+{
+    display: none;
+}
+
+.username
+{
+    font-size: 30px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.errormsg
+{
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    color: red;
+}
+
+.username input
+{
+text-decoration: none;
+outline: none;
+}
