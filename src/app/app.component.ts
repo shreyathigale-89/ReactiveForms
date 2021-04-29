@@ -68,8 +68,7 @@ export class AppComponent {
   // }
 
   onSubmit() {
-    console.log(this.quiz.value);
-
+ 
     (<HTMLInputElement>document.getElementById("quizform")).style.display = "none";
     (<HTMLInputElement>document.getElementById("output")).style.display = "block";
   }
