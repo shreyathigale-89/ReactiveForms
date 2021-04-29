@@ -24,8 +24,6 @@ export class AppComponent {
           option1: [''],
           option2: [''],
           option3: ['']
-          
-
         })
       ]),
     });
