@@ -23,8 +23,8 @@ export class AppComponent {
           ans: ['', Validators.required],
           option1: [''],
           option2: [''],
-          option3: [''],
-          radio:['']
+          option3: ['']
+          
 
         })
       ]),
@@ -42,8 +42,8 @@ export class AppComponent {
       ans: ['', Validators.required],
       option1: [''],
       option2: [''],
-      option3: [''],
-      radio:['']
+      option3: ['']
+      
     })
   }
   
@@ -57,17 +57,14 @@ export class AppComponent {
     this.quiz.removeAt(i);
   }
 
-  //For selecting correct option
-  // radioChangeHandler(event:any)
-  // {
-  //     this.selectedOption = event.target.value;
-  //     console.log(this.selectedOption);
-  //     console.log(event.target.value);
-    
-      
-  // }
+  
 
-  onSubmit() {
+
+
+
+
+
+onSubmit() {
  
     (<HTMLInputElement>document.getElementById("quizform")).style.display = "none";
     (<HTMLInputElement>document.getElementById("output")).style.display = "block";
